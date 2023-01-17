@@ -8,10 +8,28 @@ function increment() {
 }
 
 function save() {
-    let points = count + " - "
-    saveEl.textContent += points
+    let countStr = count + " - "
+    saveEl.textContent += countStr
     countEl.textContent = 0
     count = 0
+}
+
+//second counter
+
+let saveEl2 = document.getElementById("save-el-2")
+let countEl2 = document.getElementById("count-el-2")
+let count2 = 0
+
+function increment2() {
+    count2 += 1
+    countEl2.textContent = count2
+}
+
+function save2() {
+    let countStr2 = count2 + " - "
+    saveEl2.textContent += countStr2
+    countEl2.textContent = 0
+    count2 = 0
 }
 
 
